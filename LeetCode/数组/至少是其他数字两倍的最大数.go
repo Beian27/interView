@@ -1,13 +1,12 @@
 package 数组
 
-
 func dominantIndex(nums []int) int {
 	index, max := MaxNums(nums)
 	for _, v := range nums {
 		if v == max {
 			continue
 		}
-		if v * 2 > max {
+		if v*2 > max {
 			return -1
 		}
 	}

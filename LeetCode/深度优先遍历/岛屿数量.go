@@ -1,6 +1,5 @@
 package 深度优先遍历
 
-
 func numIslands(grid [][]byte) int {
 	res := 0
 	for i := 0; i < len(grid); i++ {
@@ -28,4 +27,3 @@ func dfs(grid [][]byte, r, c int) {
 	dfs(grid, r, c-1)
 	dfs(grid, r, c+1)
 }
-
